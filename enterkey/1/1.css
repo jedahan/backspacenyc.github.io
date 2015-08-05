@@ -7,6 +7,10 @@ body
 	width:1050px;
 	margin:0 auto;
 	padding-bottom:50px;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 #guests,
 footer
