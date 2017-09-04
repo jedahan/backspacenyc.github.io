@@ -26,11 +26,16 @@
         list-style-type: none;
       }
 
+      #description {
+        background-color: salmon;
+        color: lightyellow;
+      }
+
       #people {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-gap: 1em;
-        background-color: salmon;
+        background-color: steelblue;
       }
 
       .person {
@@ -73,6 +78,10 @@
       <h1> backspace.nyc
     </header>
 
+    <h2 id=description>
+      backspace.nyc is a collection of creative people, sharing a brooklyn studio space + gallery + storefront
+    </h2>
+
     <div id=people>
       <div class=person>
         <img src="people/amy.png" />
@@ -97,8 +106,9 @@
     </div>
 
     <ul id=values contenteditable=true>
-      <li class=value> accessible to people who don't identify as artists or technologists
-      <li class=value> free to be shaped by the members and community
+      <li class=value> accessible across economic strata
+      <li class=value> self-sustaining
+      <li class=value> inviting to the local community
       <li class=value> add your own values here :)
     </ul>
   </body>
