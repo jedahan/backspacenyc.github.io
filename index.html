@@ -31,24 +31,28 @@
         color: lightyellow;
       }
 
+      #values {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1em;
+      }
+
       #people {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-gap: 1em;
-        background-color: steelblue;
       }
 
       .person {
-        background-color: steelblue;
         grid-column: auto;
       }
 
-      #values ul {
+      ul {
         background-color: lightgreen;
         padding-left: 0;
       }
 
-      #values ul li {
+      ul li {
         margin: 1em;
         padding: 1em;
         background-color: lightsalmon;
@@ -88,44 +92,27 @@
       backspace helps artists find their voice by joining a diverse, creative, welcoming community; solace to focus on creating with reconfigurable studio space; and a public gallery/storefront to experiment with how to sustain their creative pursuits.
     </h2>
 
-    <div id=people>
-      <div class=person>
-        <img src="people/amy.png" />
-        <div class=info>
-          <span class=name>Amy Cheng</span>
-          <ul class=links>
-            <li><a href=http://www.amycheng.info/>amycheng.info</a>
-          </ul>
-        </div>
+    <div id=values>
+      <div>
+        <h2> values </h2>
+        <ul contenteditable>
+          <li> accessible across economic strata
+          <li> self-sustaining
+          <li> inviting to the local community
+          <li> add your own values here :)
+        </ul>
       </div>
 
-      <div class=person>
-        <img src="people/jonathan.png" />
-        <div class=info>
-          <span class=name>Jonathan Dahan</span>
-          <ul class=links>
-            <li><a href=https://jonathan.is/>jonathan.is</a>
-          </ul>
-        </div>
+      <div>
+      <h2> commitments </h2>
+        <ul contenteditable>
+          <li> male gender identifying members are the minority
+          <li> free rent
+        </ul>
       </div>
-
     </div>
 
-    <div id=values>
-      <h2> values </h2>
-      <ul contenteditable>
-        <li> accessible across economic strata
-        <li> self-sustaining
-        <li> inviting to the local community
-        <li> add your own values here :)
-      </ul>
-
-      <h2> commitments </h2>
-      <ul contenteditable>
-        <li> male gender identifying members are the minority
-        <li> free rent
-      </ul>
-
+    <div>
       <h2> calendar </h2>
       <div class=calendar>
         <div>
@@ -201,5 +188,30 @@
         </div>
       </div>
     </div>
+
+    <h2> people </h2>
+    <div id=people>
+      <div class=person>
+        <img src="people/amy.png" width=128px height=128px />
+        <div class=info>
+          <span class=name>Amy Cheng</span>
+          <ul class=links>
+            <li><a href=http://www.amycheng.info/>amycheng.info</a>
+          </ul>
+        </div>
+      </div>
+
+      <div class=person>
+        <img src="people/jonathan.png" width=128px height=128px />
+        <div class=info>
+          <span class=name>Jonathan Dahan</span>
+          <ul class=links>
+            <li><a href=https://jonathan.is/>jonathan.is</a>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
   </body>
 </html>
