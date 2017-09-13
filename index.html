@@ -43,15 +43,21 @@
         grid-column: auto;
       }
 
-      .values {
+      #values ul {
         background-color: lightgreen;
         padding-left: 0;
       }
 
-      .values li {
+      #values ul li {
         margin: 1em;
         padding: 1em;
         background-color: lightsalmon;
+      }
+
+      .calendar {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1em;
       }
 
       h1, h2, h3, h4, h5 {
@@ -111,35 +117,62 @@
 
     </div>
 
-    <h2> values </h2>
-    <ul class=values contenteditable=true>
-      <li> accessible across economic strata
-      <li> self-sustaining
-      <li> inviting to the local community
-      <li> add your own values here :)
-    </ul>
+    <div id=values>
+      <h2> values </h2>
+      <ul contenteditable>
+        <li> accessible across economic strata
+        <li> self-sustaining
+        <li> inviting to the local community
+        <li> add your own values here :)
+      </ul>
 
-    <h2> commitments </h2>
-    <ul class=values contenteditable=true>
-      <li> non-male gender-classentification parity
-      <li> free rent
-    </ul>
+      <h2> commitments </h2>
+      <ul contenteditable>
+        <li> male gender identifying members are the minority
+        <li> free rent
+      </ul>
 
-    <h2> sustainability </h2>
-    <ul class=values contenteditable=true>
-      <li> zeroth moon: non-male gender identification minority
-      <li> first moon: two experiments - workshop, party
-      <li> second moon: understanding of space costs
-      <li> third moon: two experiments - gallery opening, performance
-      <li> fourth moon: 25% of members shown a WIP and critique
-      <li> fifth moon: two experiments - auction, storefront
-      <li> sixth moon: first rent reimbursal via successful experiments
-      <li> seventh moon:
-      <li> eighth moon:
-      <li> ninth moon: second rent reimbursal via successful experiments
-      <li> tenth moon:
-      <li> eleventh moon:
-      <li> twelveth moon: next years rent lowered at least 50% by sustainability initiatives
-    </ul>
+      <h2> sustainability </h2>
+      <div class=calendar>
+        <ul class=month id=oct contenteditable>
+          <li class=experiment> opening party
+          <li class=experiment> workshop
+        </ul>
+        <ul class=month id=nov contenteditable>
+          <li> understanding of space costs
+          <li> critique
+        </ul>
+        <ul class=month id=dec contenteditable>
+          <li class=experiment> gallery opening
+          <li class=experiment> performance
+        </ul>
+        <ul class=month id=jan contenteditable>
+          <li class=experiment> auction
+          <li class=experiment> storefront
+        </ul>
+        <ul class=month id=feb contenteditable>
+          <li class=experiment> open studios
+          <li> first rent reimbursal via successful experiments
+        </ul>
+        <ul class=month id=mar contenteditable>
+          <li> nothing yet!
+        </ul>
+        <ul class=month id=apr contenteditable>
+          <li> nothing yet!
+        </ul>
+        <ul class=month id=may contenteditable>
+          <li> second rent reimbursal via successful experiments
+        </ul>
+        <ul class=month id=jun contenteditable>
+          <li> nothing yet!
+        </ul>
+        <ul class=month id=jul contenteditable>
+          <li> nothing yet!
+        </ul>
+        <ul class=month id=aug contenteditable>
+          <li> year end party!
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
