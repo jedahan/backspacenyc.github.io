@@ -47,6 +47,17 @@
         grid-column: auto;
       }
 
+      img {
+        float: right;
+        max-height: 200px;
+      }
+
+      .name {
+        float: right;
+        background-color: lightgreen;
+        margin-top: -2em;
+      }
+
       ul {
         background-color: lightgreen;
         padding-left: 0;
@@ -68,6 +79,11 @@
         font-family: 'Megrim', cursive;
         text-align: center;
         color: salmon;
+      }
+
+      img {
+        margin-left: auto;
+        margin-right: auto;
       }
 
       @font-face {
@@ -192,23 +208,17 @@
     <h2> people </h2>
     <div id=people>
       <div class=person>
-        <img src="people/amy.png" width=128px height=128px />
-        <div class=info>
+        <a href=http://www.amycheng.info/>
+          <img src="people/amy.png" />
           <span class=name>Amy Cheng</span>
-          <ul class=links>
-            <li><a href=http://www.amycheng.info/>amycheng.info</a>
-          </ul>
-        </div>
+        </a>
       </div>
 
       <div class=person>
-        <img src="people/jonathan.png" width=128px height=128px />
-        <div class=info>
-          <span class=name>Jonathan Dahan</span>
-          <ul class=links>
-            <li><a href=https://jonathan.is/>jonathan.is</a>
-          </ul>
-        </div>
+          <a href=https://jonathan.is/>
+            <img src="people/jonathan.png" />
+            <span class=name>Jonathan Dahan</span>
+          </a>
       </div>
 
     </div>
